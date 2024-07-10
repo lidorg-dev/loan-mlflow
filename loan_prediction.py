@@ -115,7 +115,7 @@ grid_tree = GridSearchCV(
     )
 model_tree = grid_tree.fit(X_train, y_train)
 
-mlflow.set_experiment("Loan_prediction")
+mlflow.set_experiment("Loan")
 
 # Model evelaution metrics
 def eval_metrics(actual, pred):
